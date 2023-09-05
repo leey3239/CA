@@ -29,9 +29,9 @@ internal class Program
     }
     public static double Balls(double radBalls, double radPit, double h)
     {
-        double volBalls = Math.PI * (4d / 3d) * radBalls * radBalls;
-        double volPit = Math.PI * radPit * radPit * h;
+        
+        
 
-        return Math.Ceiling(volPit / volBalls);
+        return Math.Ceiling((Math.PI * radPit * radPit * h) / ((Math.PI * (4d / 3d) * radBalls * radBalls * radBalls)* 0.75));
     }
 }
